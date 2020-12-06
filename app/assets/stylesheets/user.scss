@@ -1,0 +1,43 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h2{
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 33px;
+  margin-left: 26px;
+}
+
+.label{
+  padding: 33px 0 0 26px;
+}
+.formItem{
+  margin-top: 4px;
+  margin-left: 26px;
+  input{
+    border-radius: 10px;
+    background: #F7F7F7;
+    padding-left: 10px;
+    height: 40px;
+    border: none;
+    width: 100%;
+  }
+}
+
+.submitBtn{
+  width: 362px;
+  border-radius: 10px;
+  border: none;
+  margin: 514px auto 0;
+  line-height: 40px;
+  background: #F8BD1C;
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  &:hover{
+    opacity: 0.7;
+    transform: scale(1,1);
+  }
+}
