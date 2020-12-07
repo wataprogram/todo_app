@@ -41,3 +41,8 @@ h2{
     transform: scale(1,1);
   }
 }
+
+.submitBtnUp{
+  @extend .submitBtn;
+  margin: 424px auto 0;
+}
