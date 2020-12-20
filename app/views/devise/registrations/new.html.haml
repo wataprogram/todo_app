@@ -16,6 +16,11 @@
       = f.label :password_confirmation
     %p.formItem
       = f.password_field :password_confirmation, autocomplete: "new-password"
+  .field
+    %p.label
+      = f.label :avatar
+    %p
+      = f.file_field :avatar
   .actions
     %p
       = f.submit "Submit", class: "submitBtnUp"
