@@ -1,0 +1,21 @@
+%h2 New Boards
+=form_with model: @board, url: boards_path, local: true do |f|
+  .field
+    %p.label
+      =f.label :name
+    %p.formItem
+      =f.text_field :name
+  .field
+    %p.label
+      =f.label :description
+    %p.formItem
+      =f.text_area :description
+      .actions
+    %p
+      = f.submit "Submit", class: "submitBtnUp"
+
+
+
+
+
+
