@@ -12,10 +12,26 @@
   margin-top: 35px;
   z-index: 0;
   &Inner{
-
     p{
       margin-top: 6px;
       margin-left: 17px;
+    }
+  }
+  &AvatarArea{
+    position: relative;
+    .avatar{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 40px;
+      top: 30px;
+      left: 15px;
+      img{
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
     }
   }
   &Head{
@@ -23,15 +39,16 @@
     justify-content: end;
     position: relative;
     p{
-      margin-top: 32px;
-      margin-left: 17px;
-      margin-right: 237px;
+      margin: 32px 0px 10px 17px;
+      font-size: 18px;
+      font-weight: 700;
     }
     .menu_btn{
-      margin-top: 32px;
-      margin-right: 14px;
+      position: absolute;
+      top: 35px;
+      right: 25px;
       display: flex;
-      .maru{
+      .maru {
         background: #2E2F30;
         width: 6px;
         height: 6px;
@@ -40,6 +57,7 @@
         margin-right: 3px;
       }
     }
+
     .menu{
       display: none;
       position: absolute;
@@ -115,5 +133,7 @@
     background: #F4F4F4;
     border: none;
     margin-top: 8px;
+    padding: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   }
 }

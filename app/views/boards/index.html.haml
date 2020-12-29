@@ -1,16 +1,23 @@
 %h2 All Boards
-.boardItem
-  .boardItemInner
-    .boardItemHead
-      %p Brackets
-      .menu_btn
-        %span.maru
-        %span.maru
-        %span.maru
-      %ul.menu
-        %li Edit
-        %li Delete
-    %p Saving money - is something we would all like.
+- @boards.each do |board|
+  .boardItem
+    .boardItemInner
+      .boardItemHead
+        %p= board.name
+        - if board.user == current_user
+          .menu_btn
+            %span.maru
+            %span.maru
+            %span.maru
+          %ul.menu
+            %li
+              =link_to "Edit", edit_board_path(board)
+            %li
+              =link_to "Delete", board_path(board), method: :delete
+      %p= board.description
+      .boardItemAvatarArea
+        .avatar
+          =image_tag board.user.avatar if board.user.avatar.attached?
 .newBoardItem
   %p.addBtn
     =link_to  new_board_path do

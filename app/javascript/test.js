@@ -4,6 +4,6 @@ $(function() {
 
 $(function(){
    $(".menu_btn").click(function(){
-      $(".menu").toggle(150, "linear");
+      $(this).next().toggle(150, "linear");
    });
 });
